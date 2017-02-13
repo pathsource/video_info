@@ -44,7 +44,7 @@ class VideoInfo
   PROVIDERS.each { |p| require "video_info/providers/#{p.downcase}" }
 
   def_delegators :@provider, :provider, :video_id, :video_owner, :url, :data
-  def_delegators :@provider, :title, :description, :keywords, :view_count
+  def_delegators :@provider, :title, :description, :keywords, :view_count, :like_count
   def_delegators :@provider, :date, :duration, :width, :height
   def_delegators :@provider, :thumbnail
   def_delegators :@provider,

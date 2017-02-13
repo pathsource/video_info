@@ -44,6 +44,10 @@ class VideoInfo
         _video_statistics['viewCount'].to_i
       end
 
+      def like_count
+        _video_statistics['likeCount'].to_i
+      end
+
       private
 
       def available?
