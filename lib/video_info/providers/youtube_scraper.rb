@@ -39,6 +39,10 @@ class VideoInfo
         data.css('div.watch-view-count').text.gsub(/\D/, '').to_i
       end
 
+      def like_count
+        data.css('span.yt-uix-button-content').text.to_i
+      end
+
       private
 
       def meta_nodes

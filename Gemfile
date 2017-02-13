@@ -1,4 +1,5 @@
-source "http://rubygems.org"
+source 'http://rubygems.org'
+# source 'http://gems.ruby-china.org'
 
 # Specify your gem's dependencies in video_info.gemspec
 gemspec
